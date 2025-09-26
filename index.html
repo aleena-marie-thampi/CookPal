@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ultimate Interactive Recipe Finder</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+<div class="logo">
+  <div class="pot-with-smoke">
+    <div class="pot"></div>
+
+    <div class="smoke smoke1"></div>
+    <div class="smoke smoke2"></div>
+    <div class="smoke smoke3"></div>
+  </div>
+
+  <span class="logo-text">CookPal</span>
+</div>
+
+
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#homeSection">Home</a></li>
+      <li><a href="#featuresSection">Features</a></li>
+      <li><a href="#recipeListView">Search Recipes</a></li>
+      <li><a href="#funFactsSection">Fun Facts</a></li>
+      <li><a href="#contactSection">Contact</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+  </nav>
+
+  <!-- Hero -->
+  <div class="hero" id="homeSection">
+    <div class="overlay">
+      <h1>Cook Delicious Meals With Ingredients You Have!</h1>
+      <p>Type your ingredients and discover amazing recipes instantly.</p>
+      <div class="hero-buttons">
+        <button id="startBtn">Get Started</button>
+        <button id="tipsBtn">Cooking Tips</button>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Features -->
+  <section class="features" id="featuresSection">
+    <h2>Why Use RecipeFinder?</h2>
+    <div class="feature-cards">
+      <div class="feature-card"><h3>🌍 Reduce Waste</h3><p>Use ingredients you already have.</p></div>
+      <div class="feature-card"><h3>🥗 Healthy Recipes</h3><p>Discover better food choices.</p></div>
+      <div class="feature-card"><h3>⚡ Quick & Easy</h3><p>Step-by-step instructions.</p></div>
+      <div class="feature-card"><h3>📲 Share Recipes</h3><p>Share via WhatsApp or Twitter.</p></div>
+    </div>
+  </section>
+
+  <!-- Search Recipes -->
+  <div id="recipeListView" class="container">
+    <h2>🔍 Find Recipes</h2>
+
+    <div class="filters">
+      <select id="cuisineFilter"><option value="">All Cuisines</option></select>
+      <select id="dietFilter"><option value="">All Diets</option></select>
+      <select id="mealFilter"><option value="">All Meal Types</option></select>
+    </div>
+
+    <div class="search-box">
+      <input type="text" id="ingredientsInput" placeholder="e.g., tomato, cheese, chicken" />
+      <button id="searchBtn">Find Recipes</button>
+    </div>
+
+    <div id="loading" class="hidden">
+      <span class="utensil">🥄</span>
+      <span class="utensil">🍴</span>
+      <span class="utensil">🔪</span>
+      <span class="utensil">🥢</span>
+      <span class="utensil">🍳</span>
+    </div>
+    <div id="recipesContainer"></div>
+  </div>
+
+  <!-- Detail View -->
+  <div id="recipeDetailView" style="display:none;">
+    <button id="backBtn">⬅ Back</button>
+    <h1 id="recipeTitle"></h1>
+    <img id="recipeImage" src="" alt="Recipe" />
+    <p><strong>Servings:</strong> <span id="recipeServings"></span></p>
+    <p><strong>Prep Time:</strong> <span id="recipeTime"></span> minutes</p>
+    <h3>Ingredients:</h3>
+    <ul id="recipeIngredients"></ul>
+    <h3>Instructions:</h3>
+    <div id="recipeInstructions"></div>
+  </div>
+
+  <!-- FUN FACTS -->
+  <section class="fun-facts" id="funFactsSection">
+    <h2> The chef is telling you!</h2>
+
+    <div class="chef-area">
+      <!-- Chef -->
+      <div class="chef">
+<div class="chef-hat simple">
+  <div class="puff puff1"></div>
+  <div class="puff puff2"></div>
+  <div class="puff puff3"></div>
+  <div class="puff puff4"></div>
+  <div class="hat-band"></div>
+</div>      <div class="chef-head">
+          <div class="chef-eyebrows">
+            <div class="eyebrow left"></div>
+            <div class="eyebrow right"></div>
+          </div>
+          <div class="chef-eyes">
+            <div class="eye left"></div>
+            <div class="eye right"></div>
+          </div>
+          <div class="chef-nose"></div>
+          <div class="chef-mouth"></div>
+        </div>
+        <div class="chef-body">
+          <div class="chef-coat">
+            <div class="coat-buttons"></div>
+            <div class="coat-buttons"></div>
+            <div class="coat-buttons"></div>
+          </div>
+          <div class="chef-utensil"></div>
+        </div>
+      </div>
+
+      <!-- Bubble -->
+      <div class="speech-bubble" id="speechBubble">
+        <div class="tip-text" id="tipText">Tip will appear here...</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contactSection">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
