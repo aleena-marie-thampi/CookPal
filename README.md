@@ -64,15 +64,20 @@ The project is live at:
 
 ## 📂 Project Structure
 
-CookPal/
--├── index.html
--├── style.css
--├── script.js
--├── /assets
--│ ├── images/
--│ └── icons/
--└── README.md
+```
+📁 CookPal/
+├── index.html
+├── style.css            
+├── script.js         
+├── train.csv            
+├── amb.csv              
+├── requirements.txt
+├── assets/
+│   ├── images/
+│   ├── icons/
+└── README.md
 
+```
 ---
 
 ## 🌱 Future Improvements
@@ -84,5 +89,6 @@ CookPal/
 - 🌍 Multi-language support  
 - 🤖 AI-powered meal planning  
 ---
+
 
 
