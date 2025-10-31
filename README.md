@@ -68,10 +68,7 @@ The project is live at:
 📁 CookPal/
 ├── index.html
 ├── style.css            
-├── script.js         
-├── train.csv            
-├── amb.csv              
-├── requirements.txt
+├── script.js                
 ├── assets/
 │   ├── images/
 │   ├── icons/
@@ -89,6 +86,7 @@ The project is live at:
 - 🌍 Multi-language support  
 - 🤖 AI-powered meal planning  
 ---
+
 
 
 
